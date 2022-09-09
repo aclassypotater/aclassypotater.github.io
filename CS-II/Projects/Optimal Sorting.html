@@ -1,12 +1,24 @@
 <html>
     <a href="../../index.html">home<br><br></a>
     <a href="../index.html">projects<br><br></a>
+    <h1>
+     <a href="https://www.github.com/ChrisC305446/Optimal-Sorting"> GITHUB REPOSITORY</a>
+    </h1>
     <body>
+      
         <p>
-            Group Members: <br>Evan Bowerman<br>Chris 
+            Group Members: <br>Evan B<br>Chris C<br>Shariq H 
         </p>
+	<div>
 
-
+	 <h2>How it works</h2>
+	 <p>
+	   After stdin is recieved, every string is made the same size with added spaces, this is so we can compare strings without worrying about index errors ex: string1[0] == string2[0] checks if the first letter of the strings is the same. after that we first iterate over the array only accessing the first character of every string, there is a dictionary that converts letters to numbers ex: a == 0, c == 2. everytime a letter is a higher value than the one ahead of it they get swapped in the array, this is repeated until all first characters are sorted. Next up is the hard part, we still compare the values of the letters in the second position but we only swap if the proceeding letters in both words are the same ex: swap bro and bat, but not bro and cat even though r > a on both of them. Then do that until the second characters are sorted and repeat until youve reached the final character spot (last letter on the longest word). Finally we can write to stdout. 
+ 	 </p>
+	 <h2>How it went</h2>
+	<p>
+	    I underestimated how much more complicated sorting words would be. It didnt cross my mind that words have multiple letters that have to be compared rather than just comparing single numbers until it was too late. I did most of the coding as i was experienced in python, it took a while until i got it working, but i managed to pull it off. Understanding stdin and stdout and their similarities to print() and input() was a good learning experience. This was also my first time working on a project together in github (octocat my beloved)
+	</p>
 
     </body>
 </html>
